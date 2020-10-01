@@ -1,3 +1,4 @@
+//feature 1
 import React from "react";
 
 function App() {
@@ -6,12 +7,8 @@ function App() {
       <header>
         <a href="/">React Shopping Cart</a>
       </header>
-      <main>
-        Product list
-      </main>
-      <footer>
-        all right reserved
-      </footer>
+      <main>Product list</main>
+      <footer>all right reserved</footer>
     </div>
   );
 }
