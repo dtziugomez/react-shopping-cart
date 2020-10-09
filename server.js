@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 
 mongoose.connect('mongodb://localhost/react-shopping-cart-db',{
 useNewUrlParser:true,
-useCreateIndex=true,
+useCreateIndex:true,
 useUnifiedTopology:true
 });
 
@@ -28,7 +28,7 @@ app.get("/api/products/",async (req,res)=>{
     res.send(products);
 });
 
-app.post("/api/products", async (re,res)=>{
+app.post("/api/products", async (req,res)=>{
     const newProduct= new Product(req.body);
     const savedProduct= await  newProduct.save();
     res.send(savedProduct);
